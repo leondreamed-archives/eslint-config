@@ -12,7 +12,13 @@ module.exports = {
 		"plugin:vue/vue3-recommended",
 		"prettier",
 	],
-	plugins: ["@typescript-eslint", "simple-import-sort", "import", "unicorn", "vue"],
+	plugins: [
+		"@typescript-eslint",
+		"simple-import-sort",
+		"import",
+		"unicorn",
+		"vue",
+	],
 	ignorePatterns: ["dist"],
 	parserOptions: {
 		parser: "@typescript-eslint/parser",
@@ -88,6 +94,7 @@ module.exports = {
 		"@typescript-eslint/no-unused-vars": [
 			"error",
 			{
+				args: "after-used",
 				argsIgnorePattern: "^_",
 				varsIgnorePattern: "^_",
 				caughtErrorsIgnorePattern: "^_",
@@ -113,7 +120,7 @@ module.exports = {
 		"unicorn/no-null": "off",
 
 		// vue rules
-		"vue/html-indent": ["error", "tab"]
+		"vue/html-indent": ["error", "tab"],
 	},
 	overrides: [
 		{
