@@ -11,7 +11,6 @@ module.exports = {
 		"plugin:import/typescript",
 		"plugin:vue/vue3-recommended",
 		"prettier",
-		"prettier/vue",
 	],
 	plugins: ["@typescript-eslint", "simple-import-sort", "import", "unicorn", "vue"],
 	ignorePatterns: ["dist"],
