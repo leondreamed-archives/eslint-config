@@ -10,8 +10,10 @@ module.exports = {
 		"plugin:unicorn/recommended",
 		"plugin:import/typescript",
 		"prettier",
+		"plugin:vue/vue3-recommended"
 	],
 	plugins: ["@typescript-eslint", "simple-import-sort", "import", "unicorn"],
+	ignorePatterns: ["dist"],
 	parserOptions: {
 		parser: "@typescript-eslint/parser",
 		ecmaVersion: 2018,
