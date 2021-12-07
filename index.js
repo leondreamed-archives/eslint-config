@@ -14,8 +14,6 @@ module.exports = {
 	plugins: ["@typescript-eslint", "simple-import-sort", "import", "unicorn"],
 	parserOptions: {
 		parser: "@typescript-eslint/parser",
-		project: ["./tsconfig.eslint.json"],
-		tsconfigRootDir: __dirname,
 		ecmaVersion: 2018,
 		sourceType: "module",
 	},
@@ -41,8 +39,11 @@ module.exports = {
 		"no-continue": "off",
 		"no-cond-assign": ["error", "except-parens"],
 		"default-case": "off",
+		"no-use-before-define": "off",
+		"func-names": "off",
+		"object-shorthand": "off",
 
-		// eslint-plugin-importrules
+		// eslint-plugin-import rules
 		"import/no-default-export": "error",
 		"import/prefer-default-export": "off",
 		"import/extensions": [
@@ -82,17 +83,19 @@ module.exports = {
 		// TypeScript ESLint rules
 		"@typescript-eslint/explicit-module-boundary-types": "off",
 		"@typescript-eslint/explicit-function-return-type": "off",
-		"@typescript-eslint/no-unused-vars": "off",
-		"@typescript-eslint/no-unused-vars-experimental": [
+		"@typescript-eslint/no-unused-vars": [
 			"error",
-			{ ignoreArgsIfArgsAfterAreUsed: true },
+			{
+				argsIgnorePattern: "^_",
+				varsIgnorePattern: "^_",
+				caughtErrorsIgnorePattern: "^_",
+			},
 		],
 		"@typescript-eslint/no-unused-expressions": "error",
 		"@typescript-eslint/no-shadow": "off",
 		"@typescript-eslint/no-explicit-any": "off",
 		"@typescript-eslint/no-non-null-assertion": "off",
 		"@typescript-eslint/consistent-type-imports": "error",
-		"@typescript-eslint/no-floating-promises": "error",
 		"@typescript-eslint/no-empty-interface": "off",
 
 		// eslint-plugin-unicorn
@@ -103,6 +106,8 @@ module.exports = {
 		"unicorn/consistent-function-scoping": "off",
 		"unicorn/no-useless-undefined": "off",
 		"unicorn/filename-case": ["error", { case: "kebabCase" }],
+		"unicorn/prefer-query-selector": "off",
+		"unicorn/consistent-destructuring": "off",
 		"unicorn/no-null": "off",
 	},
 };
