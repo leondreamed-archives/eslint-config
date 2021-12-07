@@ -9,10 +9,11 @@ module.exports = {
 		"plugin:@typescript-eslint/recommended",
 		"plugin:unicorn/recommended",
 		"plugin:import/typescript",
-		"prettier",
 		"plugin:vue/vue3-recommended",
+		"prettier",
+		"prettier/vue",
 	],
-	plugins: ["@typescript-eslint", "simple-import-sort", "import", "unicorn"],
+	plugins: ["@typescript-eslint", "simple-import-sort", "import", "unicorn", "vue"],
 	ignorePatterns: ["dist"],
 	parserOptions: {
 		parser: "@typescript-eslint/parser",
@@ -111,6 +112,9 @@ module.exports = {
 		"unicorn/prefer-query-selector": "off",
 		"unicorn/consistent-destructuring": "off",
 		"unicorn/no-null": "off",
+
+		// vue rules
+		"vue/html-indent": ["error", "tab"]
 	},
 	overrides: [
 		{
