@@ -112,4 +112,12 @@ module.exports = {
 		"unicorn/consistent-destructuring": "off",
 		"unicorn/no-null": "off",
 	},
+	overrides: [
+		{
+			files: "*.vue",
+			rules: {
+				'import/no-default-export': 'off'
+			}
+		}
+	]
 };
