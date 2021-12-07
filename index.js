@@ -10,7 +10,7 @@ module.exports = {
 		"plugin:unicorn/recommended",
 		"plugin:import/typescript",
 		"prettier",
-		"plugin:vue/vue3-recommended"
+		"plugin:vue/vue3-recommended",
 	],
 	plugins: ["@typescript-eslint", "simple-import-sort", "import", "unicorn"],
 	ignorePatterns: ["dist"],
@@ -116,8 +116,8 @@ module.exports = {
 		{
 			files: "*.vue",
 			rules: {
-				'import/no-default-export': 'off'
-			}
-		}
-	]
+				"import/no-default-export": "off",
+			},
+		},
+	],
 };
