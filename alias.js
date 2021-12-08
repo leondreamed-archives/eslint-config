@@ -1,7 +1,7 @@
-module.exports = (aliases) => ({
+module.exports = (aliasMap) => ({
 	'import/resolver': {
 		alias: {
-			map: [aliases]
+			map: [Object.entries(aliasMap)],
 			extensions: ['.ts', '.js', '.vue']
 		}
 	}
