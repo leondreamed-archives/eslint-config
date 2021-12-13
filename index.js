@@ -131,8 +131,14 @@ module.exports = {
 		{
 			files: ".eslintrc.js",
 			rules: {
-				"@typescript-eslint/no-var-requires": "off"
-			}
+				"@typescript-eslint/no-var-requires": "off",
+			},
+		},
+		{
+			files: 'test',
+			rules: {
+				'import/no-extraneous-dependencies': 'off',
+			},
 		}
 	],
 };
