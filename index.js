@@ -50,6 +50,7 @@ module.exports = {
 		"no-use-before-define": "off",
 		"func-names": "off",
 		"object-shorthand": "off",
+		"dot-notation": "off",
 
 		// eslint-plugin-import rules
 		"import/no-default-export": "error",
@@ -106,6 +107,7 @@ module.exports = {
 		"@typescript-eslint/no-non-null-assertion": "off",
 		"@typescript-eslint/consistent-type-imports": "error",
 		"@typescript-eslint/no-empty-interface": "off",
+		"@typescript-eslint/dot-notation": ["error"],
 
 		// eslint-plugin-unicorn
 		"unicorn/prefer-ternary": "off",
