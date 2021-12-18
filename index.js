@@ -63,6 +63,7 @@ module.exports = {
 			},
 		],
 		"import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.js", "**/*.spec.js", ".eslintrc.js"]}],
+
 		// eslint-config-airbnb-base style overrides
 		"no-restricted-syntax": [
 			"error",
