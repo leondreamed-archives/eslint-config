@@ -108,8 +108,6 @@ module.exports = {
 		"@typescript-eslint/no-empty-interface": "off",
 
 		// eslint-plugin-unicorn
-		"unicorn/prefer-module": "off",
-		"unicorn/prefer-node-protocol": "off",
 		"unicorn/prefer-ternary": "off",
 		"unicorn/prevent-abbreviations": "off",
 		"unicorn/consistent-function-scoping": "off",
