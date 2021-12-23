@@ -1,5 +1,3 @@
-/* eslint-env node */
-
 require("@rushstack/eslint-patch/modern-module-resolution");
 
 /**
@@ -7,15 +5,17 @@ require("@rushstack/eslint-patch/modern-module-resolution");
  */
 const config = {
 	extends: [
-		"./xo-plugins.cjs",
 		"xo",
 		"xo-typescript",
+		"./xo-plugins.cjs",
 		"plugin:vue/vue3-recommended",
 	],
-	plugins: [
-		"simple-import-sort",
-		"vue",
-	],
+	plugins: ["simple-import-sort", "vue"],
+	parserOptions: {
+		parser: "@typescript-eslint/parser",
+		ecmaVersion: 2018,
+		sourceType: "module",
+	},
 	overrides: [
 		{
 			files: "*.vue",
