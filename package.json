@@ -2,11 +2,11 @@
   "name": "@leonzalion/eslint-config",
   "version": "1.0.23",
   "description": "",
-  "main": "index.js",
+  "main": "index.cjs",
   "files": [
     "index.cjs",
     "alias.cjs",
-    "xo-configs.cjs"
+    "xo-plugins.cjs"
   ],
   "dependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
