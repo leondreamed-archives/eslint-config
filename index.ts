@@ -1,9 +1,6 @@
-require("@rushstack/eslint-patch/modern-module-resolution");
+import "@rushstack/eslint-patch/modern-module-resolution";
 
-/**
- * @type import('eslint').Linter.Config
- */
-const config = {
+export default {
 	extends: [
 		"xo",
 		"xo-typescript",
@@ -26,5 +23,3 @@ const config = {
 		},
 	],
 };
-
-module.exports = config;

@@ -1,0 +1,7 @@
+{
+	"extends": "@leonzalion/tsconfig/tsconfig.json",
+	"compilerOptions": {
+		"module": "CommonJS",
+		"outDir": "dist"
+	}
+}

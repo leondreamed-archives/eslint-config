@@ -2,12 +2,16 @@
   "name": "@leonzalion/eslint-config",
   "version": "1.0.27",
   "description": "",
+  "types": "index.d.ts",
   "main": "index.cjs",
-  "files": [
-    "index.cjs",
-    "alias.cjs",
-    "xo-plugins.cjs"
-  ],
+  "np": {
+    "contents": "dist"
+  },
+	"files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+		"release": "np"
+  },
   "dependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
@@ -31,5 +35,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@leonzalion/tsconfig": "^1.0.6",
+    "np": "^7.6.0",
+    "typescript": "^4.5.4"
+  }
 }
