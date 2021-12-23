@@ -14,7 +14,7 @@ module.exports = {
 		ecmaVersion: 2018,
 		sourceType: "module",
 	},
-	rules: [
+	rules: {
 		"@typescript-eslint/no-unused-vars": [
 			"error",
 			{
@@ -24,7 +24,7 @@ module.exports = {
 				caughtErrorsIgnorePattern: "^_",
 			},
 		],
-	],
+	},
 	overrides: [
 		{
 			files: "*.vue",
