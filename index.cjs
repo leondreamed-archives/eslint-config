@@ -9,6 +9,7 @@ const config = {
 		"xo-typescript",
 		"./xo-plugins.cjs",
 		"plugin:vue/vue3-recommended",
+		"prettier"
 	],
 	plugins: ["simple-import-sort", "vue"],
 	parserOptions: {
