@@ -1,6 +1,6 @@
-import "@rushstack/eslint-patch/modern-module-resolution";
+require("@rushstack/eslint-patch/modern-module-resolution");
 
-export default {
+module.exports = {
 	extends: [
 		"xo",
 		"xo-typescript",

@@ -1,2 +1,1 @@
-// @ts-ignore
-export { default } from 'xo/config/plugins.cjs';
+module.exports = require('xo/config/plugins.cjs');
