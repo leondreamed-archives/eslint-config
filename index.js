@@ -118,6 +118,7 @@ module.exports = {
 		"unicorn/prefer-query-selector": "off",
 		"unicorn/consistent-destructuring": "off",
 		"unicorn/no-null": "off",
+		"unicorn/template-indent": ['warn', { indent: '\t' }],
 
 		// vue rules
 		"vue/html-indent": ["error", "tab"],
