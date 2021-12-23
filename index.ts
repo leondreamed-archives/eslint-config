@@ -4,7 +4,7 @@ module.exports = {
 	extends: [
 		"xo",
 		"xo-typescript",
-		"./xo-plugins.cjs",
+		"./xo-plugins.js",
 		"plugin:vue/vue3-recommended",
 		"prettier"
 	],
