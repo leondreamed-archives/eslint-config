@@ -1,6 +1,8 @@
 require("@rushstack/eslint-patch/modern-module-resolution");
 
-module.exports = {
+const { defineConfig } = require('eslint-define-config');
+
+module.exports = defineConfig({
 	extends: [
 		"xo",
 		"xo-typescript",
@@ -40,4 +42,4 @@ module.exports = {
 			}
 		}
 	],
-};
+});
