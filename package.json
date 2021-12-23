@@ -3,15 +3,12 @@
   "version": "1.0.29",
   "description": "",
   "types": "index.d.ts",
-  "main": "index.cjs",
+  "main": "index.js",
   "np": {
     "contents": "./dist",
     "tests": false,
     "cleanup": false
   },
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "version": "pnpm build",
     "build": "rimraf dist && tsc && cp package.json dist/package.json",
