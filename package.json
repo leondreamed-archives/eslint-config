@@ -1,19 +1,21 @@
 {
   "name": "@leonzalion/eslint-config",
-  "version": "1.0.27",
+  "version": "1.0.28",
   "description": "",
   "types": "index.d.ts",
   "main": "index.cjs",
   "np": {
-    "contents": "dist",
-		"tests": false,
-		"cleanup": false
+    "contents": "./dist",
+    "tests": false,
+    "cleanup": false
   },
-	"files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-		"version": "pnpm build",
-    "build": "tsc && cp package.json dist/package.json",
-		"release": "np"
+    "version": "pnpm build",
+    "build": "rimraf dist && tsc && cp package.json dist/package.json",
+    "release": "np"
   },
   "dependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
@@ -42,6 +44,7 @@
   "devDependencies": {
     "@leonzalion/tsconfig": "^1.0.6",
     "np": "^7.6.0",
+    "rimraf": "^3.0.2",
     "typescript": "^4.5.4"
   }
 }
