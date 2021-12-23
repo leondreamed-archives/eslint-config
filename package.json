@@ -11,7 +11,7 @@
   },
 	"files": ["dist"],
   "scripts": {
-		"prepublish": "pnpm build",
+		"version": "pnpm build",
     "build": "tsc && cp package.json dist/package.json",
 		"release": "np"
   },
