@@ -27,7 +27,11 @@ module.exports = defineConfig({
 		{
 			files: ["*.ts", "*.vue"],
 			extends: [
+				"xo",
 				"xo-typescript",
+				"./xo-plugins.js",
+				"plugin:vue/vue3-recommended",
+				"prettier"
 			],
 			parserOptions: {
 				parser: "@typescript-eslint/parser",
