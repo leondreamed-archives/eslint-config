@@ -1,8 +1,8 @@
 module.exports = {
   hooks: {
-    readPackages (pkg) {
+    readPackage(pkg) {
       if (pkg.name === 'eslint-import-resolver-webpack') {
-        pkg.peerDependencies['webpack'] = '*'
+        delete pkg.peerDependencies['webpack'];
       }
       return pkg
     }

@@ -1428,7 +1428,6 @@ packages:
     engines: {node: '>= 6'}
     peerDependencies:
       eslint-plugin-import: '>=1.4.0'
-      webpack: '>=1.11.0'
     dependencies:
       array-find: 1.0.0
       debug: 3.2.7
@@ -4375,7 +4374,6 @@ packages:
       typescript: 4.5.4
     transitivePeerDependencies:
       - supports-color
-      - webpack
     dev: false
     bundledDependencies:
       - '@typescript-eslint/eslint-plugin'
