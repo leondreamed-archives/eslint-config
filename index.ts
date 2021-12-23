@@ -5,28 +5,11 @@ const { defineConfig } = require('eslint-define-config');
 module.exports = defineConfig({
 	extends: [
 		"xo",
-		"xo-typescript",
 		"./xo-plugins.js",
 		"plugin:vue/vue3-recommended",
 		"prettier"
 	],
 	plugins: ["simple-import-sort", "vue"],
-	parserOptions: {
-		parser: "@typescript-eslint/parser",
-		ecmaVersion: 2018,
-		sourceType: "module",
-	},
-	rules: {
-		"@typescript-eslint/no-unused-vars": [
-			"error",
-			{
-				args: "after-used",
-				argsIgnorePattern: "^_",
-				varsIgnorePattern: "^_",
-				caughtErrorsIgnorePattern: "^_",
-			},
-		],
-	},
 	overrides: [
 		{
 			files: "*.vue",
@@ -40,6 +23,28 @@ module.exports = defineConfig({
 				'@typescript-eslint/no-require-imports': 'off',
 				'@typescript-eslint/no-var-requires': 'off'
 			}
+		},
+		{
+			files: ["*.ts", "*.vue"],
+			extends: [
+				"xo-typescript",
+			],
+			parserOptions: {
+				parser: "@typescript-eslint/parser",
+				ecmaVersion: 2018,
+				sourceType: "module",
+			},
+			rules: {
+				"@typescript-eslint/no-unused-vars": [
+					"error",
+					{
+						args: "after-used",
+						argsIgnorePattern: "^_",
+						varsIgnorePattern: "^_",
+						caughtErrorsIgnorePattern: "^_",
+					},
+				],
+			},
 		}
 	],
 });
