@@ -10,6 +10,16 @@ module.exports = defineConfig({
 		"prettier",
 		"./global-rules.js",
 	],
+	rules: {
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				js: "never",
+				ts: "never",
+			},
+		],
+	},
 	plugins: ["simple-import-sort", "vue"],
 	overrides: [
 		{
@@ -41,6 +51,14 @@ module.exports = defineConfig({
 				sourceType: "module",
 			},
 			rules: {
+				"import/extensions": [
+					"error",
+					"ignorePackages",
+					{
+						js: "never",
+						ts: "never",
+					},
+				],
 				"@typescript-eslint/no-unused-vars": [
 					"error",
 					{
