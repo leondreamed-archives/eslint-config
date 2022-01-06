@@ -1,6 +1,6 @@
 {
   "name": "@leonzalion/eslint-config",
-  "version": "1.0.38",
+  "version": "1.0.39",
   "description": "",
   "types": "index.d.ts",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "scripts": {
     "version": "pnpm build",
-    "build": "rimraf dist && tsc && cp package.json dist && cp .pnpmfile.cjs dist/",
+    "build": "rimraf dist && tsc && cp package.json dist",
     "release": "np"
   },
   "dependencies": {
@@ -45,15 +45,15 @@
     "rimraf": "^3.0.2",
     "typescript": "^4.5.4"
   },
-	"pnpm": {
-		"packageExtensions": {
-			"xo": {
-				"peerDependenciesMeta": {
-					"webpack": {
-						"optional": true
-					}
-				}
-			}
-		}
-	}
+  "pnpm": {
+    "packageExtensions": {
+      "xo": {
+        "peerDependenciesMeta": {
+          "webpack": {
+            "optional": true
+          }
+        }
+      }
+    }
+  }
 }
