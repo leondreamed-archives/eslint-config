@@ -43,7 +43,7 @@ module.exports = defineConfig({
 				"./xo-plugins.js",
 				"plugin:vue/vue3-recommended",
 				"prettier",
-				"./global-rules.js",
+				"./global-rules.js"
 			],
 			parserOptions: {
 				parser: "@typescript-eslint/parser",
@@ -51,14 +51,6 @@ module.exports = defineConfig({
 				sourceType: "module",
 			},
 			rules: {
-				"import/extensions": [
-					"error",
-					"ignorePackages",
-					{
-						js: "never",
-						ts: "never",
-					},
-				],
 				"@typescript-eslint/no-unused-vars": [
 					"error",
 					{
