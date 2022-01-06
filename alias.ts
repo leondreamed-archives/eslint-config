@@ -1,8 +1,8 @@
 module.exports = (aliasMap: Record<string, string>) => ({
-	'import/resolver': {
+	"import/resolver": {
 		alias: {
-			map: Object.entries(aliasMap)
-		}
-	}
+			extensions: [".js", ".ts"],
+			map: Object.entries(aliasMap),
+		},
+	},
 });
-
