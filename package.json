@@ -47,7 +47,7 @@
   },
   "pnpm": {
     "packageExtensions": {
-      "xo": {
+      "eslint-import-resolver-webpack": {
         "peerDependenciesMeta": {
           "webpack": {
             "optional": true
