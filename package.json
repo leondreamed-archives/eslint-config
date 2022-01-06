@@ -44,5 +44,16 @@
     "np": "^7.6.0",
     "rimraf": "^3.0.2",
     "typescript": "^4.5.4"
-  }
+  },
+	"pnpm": {
+		"packageExtensions": {
+			"xo": {
+				"peerDependenciesMeta": {
+					"webpack": {
+						"optional": true
+					}
+				}
+			}
+		}
+	}
 }

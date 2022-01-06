@@ -1,5 +1,7 @@
 lockfileVersion: 5.3
 
+packageExtensionsChecksum: 771465087b78ebb1674204ea691f327c
+
 specifiers:
   '@leonzalion/tsconfig': ^1.0.6
   '@rushstack/eslint-patch': ^1.1.0
@@ -4342,6 +4344,11 @@ packages:
     resolution: {integrity: sha512-QHRIpaPSG7tK7PX4K4fqe0V4EH1u2IkM7Pr356u1fKcVsZskw7i9gfEqyBLsnnc4e4Y8gnLtIqasLJsGPqM8sA==}
     engines: {node: '>=12.20'}
     hasBin: true
+    peerDependencies:
+      webpack: '*'
+    peerDependenciesMeta:
+      webpack:
+        optional: true
     dependencies:
       '@eslint/eslintrc': 1.0.5
       '@typescript-eslint/eslint-plugin': 5.6.0_02796d4b7ecdf1887f7d6cf74ebd8f80
