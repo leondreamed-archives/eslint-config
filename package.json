@@ -1,6 +1,6 @@
 {
   "name": "@leonzalion/eslint-config",
-  "version": "1.0.42",
+  "version": "1.0.43",
   "description": "",
   "types": "index.d.ts",
   "main": "index.js",
