@@ -11,10 +11,14 @@ module.exports = defineConfig({
 	],
 	plugins: ["simple-import-sort", "vue"],
 	rules: {
-		'import/extensions': ['error', {
-			js: 'never',
-			ts: 'never',
-		}]
+		'import/extensions': [
+			'error', 
+			'ignorePackages',
+			{
+				js: 'never',
+				ts: 'never',
+			}
+		]
 	},
 	overrides: [
 		{
