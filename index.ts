@@ -10,6 +10,12 @@ module.exports = defineConfig({
 		"prettier"
 	],
 	plugins: ["simple-import-sort", "vue"],
+	rules: {
+		'import/extensions': ['error', {
+			js: 'never',
+			ts: 'never',
+		}]
+	},
 	overrides: [
 		{
 			files: "*.vue",
