@@ -1,25 +1,16 @@
 require("@rushstack/eslint-patch/modern-module-resolution");
 
-const { defineConfig } = require('eslint-define-config');
+const { defineConfig } = require("eslint-define-config");
 
 module.exports = defineConfig({
 	extends: [
 		"xo",
 		"./xo-plugins.js",
 		"plugin:vue/vue3-recommended",
-		"prettier"
+		"prettier",
+		"./global-rules.js",
 	],
 	plugins: ["simple-import-sort", "vue"],
-	rules: {
-		'import/extensions': [
-			'error', 
-			'ignorePackages',
-			{
-				js: 'never',
-				ts: 'never',
-			}
-		]
-	},
 	overrides: [
 		{
 			files: "*.vue",
@@ -30,9 +21,9 @@ module.exports = defineConfig({
 		{
 			files: "*.cjs",
 			rules: {
-				'@typescript-eslint/no-require-imports': 'off',
-				'@typescript-eslint/no-var-requires': 'off'
-			}
+				"@typescript-eslint/no-require-imports": "off",
+				"@typescript-eslint/no-var-requires": "off",
+			},
 		},
 		{
 			files: ["*.ts", "*.vue"],
@@ -41,7 +32,8 @@ module.exports = defineConfig({
 				"xo-typescript",
 				"./xo-plugins.js",
 				"plugin:vue/vue3-recommended",
-				"prettier"
+				"prettier",
+				"./global-rules.js",
 			],
 			parserOptions: {
 				parser: "@typescript-eslint/parser",
@@ -59,6 +51,6 @@ module.exports = defineConfig({
 					},
 				],
 			},
-		}
+		},
 	],
 });
