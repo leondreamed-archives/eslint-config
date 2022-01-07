@@ -2,6 +2,7 @@ module.exports = {
 	rules: {
 		'import/no-unassigned-import': 'off',
 		'@typescript-eslint/consistent-type-imports': 'error',
+		'node/file-extensions-in-import': 'off',
 		'import/extensions': [
 			'error',
 			{
