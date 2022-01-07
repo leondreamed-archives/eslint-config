@@ -1,6 +1,6 @@
 {
 	"name": "@leonzalion/eslint-config",
-	"version": "1.0.49",
+	"version": "1.0.50",
 	"prettier": "@leonzalion/prettier-config",
 	"description": "",
 	"types": "index.d.ts",
