@@ -1,59 +1,62 @@
 {
-  "name": "@leonzalion/eslint-config",
-  "version": "1.0.48",
-  "description": "",
-  "types": "index.d.ts",
-  "main": "index.js",
-  "np": {
-    "contents": "./dist",
-    "tests": false,
-    "cleanup": false
-  },
-  "scripts": {
-    "version": "pnpm build",
-    "build": "rimraf dist && tsc && cp package.json dist",
-    "release": "np"
-  },
-  "dependencies": {
-    "@rushstack/eslint-patch": "^1.1.0",
-    "@typescript-eslint/eslint-plugin": "^5.6.0",
-    "@typescript-eslint/parser": "^5.6.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-config-xo": "^0.39.0",
-    "eslint-config-xo-typescript": "^0.47.1",
-    "eslint-define-config": "^1.2.0",
-    "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-no-use-extend-native": "^0.5.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-unicorn": "^39.0.0",
-    "eslint-plugin-vue": "^8.2.0",
-    "xo": "^0.47.0"
-  },
-  "peerDependencies": {
-    "eslint": "^8.4.0"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@leonzalion/tsconfig": "^1.0.6",
-    "np": "^7.6.0",
-    "rimraf": "^3.0.2",
-    "typescript": "^4.5.4"
-  },
-  "pnpm": {
-    "packageExtensions": {
-      "eslint-import-resolver-webpack": {
-        "peerDependenciesMeta": {
-          "webpack": {
-            "optional": true
-          }
-        }
-      }
-    }
-  }
+	"name": "@leonzalion/eslint-config",
+	"version": "1.0.48",
+	"prettier": "@leonzalion/prettier-config",
+	"description": "",
+	"types": "index.d.ts",
+	"main": "index.js",
+	"np": {
+		"contents": "./dist",
+		"tests": false,
+		"cleanup": false
+	},
+	"scripts": {
+		"version": "pnpm build",
+		"build": "rimraf dist && tsc && cp package.json dist",
+		"release": "np"
+	},
+	"dependencies": {
+		"@rushstack/eslint-patch": "^1.1.0",
+		"@typescript-eslint/eslint-plugin": "^5.6.0",
+		"@typescript-eslint/parser": "^5.6.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-config-xo": "^0.39.0",
+		"eslint-config-xo-typescript": "^0.47.1",
+		"eslint-define-config": "^1.2.0",
+		"eslint-import-resolver-alias": "^1.1.2",
+		"eslint-plugin-eslint-comments": "^3.2.0",
+		"eslint-plugin-import": "^2.25.3",
+		"eslint-plugin-no-use-extend-native": "^0.5.0",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-simple-import-sort": "^7.0.0",
+		"eslint-plugin-unicorn": "^39.0.0",
+		"eslint-plugin-vue": "^8.2.0",
+		"xo": "^0.47.0"
+	},
+	"peerDependencies": {
+		"eslint": "^8.4.0"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@leonzalion/prettier-config": "^1.0.2",
+		"@leonzalion/tsconfig": "^1.0.6",
+		"np": "^7.6.0",
+		"prettier": "^2.5.1",
+		"rimraf": "^3.0.2",
+		"typescript": "^4.5.4"
+	},
+	"pnpm": {
+		"packageExtensions": {
+			"eslint-import-resolver-webpack": {
+				"peerDependenciesMeta": {
+					"webpack": {
+						"optional": true
+					}
+				}
+			}
+		}
+	}
 }
